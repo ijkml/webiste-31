@@ -1,11 +1,11 @@
 <script setup>
 useHead({
-  title: 'Vitesse Nuxt 3',
+  title: 'Moses Laurence | Web Developer',
   link: [
     {
       rel: 'icon',
-      type: 'image/png',
-      href: '/logo.png',
+      type: 'image/svg+xml',
+      href: '/favicon.svg',
     },
   ],
 });
