@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: 'Moses Laurence | Web Developer',
+  title: 'Moses Laurence | UI Developer',
   htmlAttrs: {
     lang: 'en',
   },
@@ -15,7 +15,7 @@ useHead({
 </script>
 
 <template>
-  <main class="py-20 px-10 text-center">
+  <main id="layout-main">
     <NuxtLoadingIndicator />
     <NuxtPage />
   </main>
@@ -29,12 +29,16 @@ body,
   margin: 0;
   padding: 0;
   color-scheme: dark;
+  color: hsl(0, 0%, 75%);
+  font-family: 'Signika Negative', system-ui, -apple-system, Ubuntu, sans-serif;
 }
 
 html {
   overflow-y: scroll;
   background: @blk-1;
-  color: #eee;
-  font-family: 'Graphik', system-ui, -apple-system, Ubuntu, sans-serif;
+}
+
+#layout-main {
+  @apply py-20 px-10 text-center;
 }
 </style>
