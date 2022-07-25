@@ -6,3 +6,4 @@ dist
 .env
 .code-workspace
 .local
+_router
