@@ -3,14 +3,8 @@
 
 <template>
   <div>
-    <Suspense>
-      <div>Homepage</div>
-      <template #fallback>
-        <div class="opacity-50 italic">
-          <span class="animate-pulse">Loading...</span>
-        </div>
-      </template>
-    </Suspense>
+    <TheLogo />
+    <div>Homepage</div>
   </div>
 </template>
 
