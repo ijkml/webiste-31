@@ -1,6 +1,9 @@
 <script setup>
 useHead({
   title: 'Moses Laurence | Web Developer',
+  htmlAttrs: {
+    lang: 'en',
+  },
   link: [
     {
       rel: 'icon',
@@ -12,9 +15,10 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout cl>
+  <main class="py-20 px-10 text-center">
+    <NuxtLoadingIndicator />
     <NuxtPage />
-  </NuxtLayout>
+  </main>
 </template>
 
 <style lang="less">
@@ -24,20 +28,13 @@ body,
   height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-:root {
-  --theme-pri: @pri;
-  --theme-sec: @sec;
-  --theme-tet: @tet;
-  --theme-blk-1: @blk-1;
-  --theme-blk-2: @blk-2;
+  color-scheme: dark;
 }
 
 html {
-  color-scheme: dark;
   overflow-y: scroll;
-
-  @apply bg-blk-1 text-white;
+  background: @blk-1;
+  color: #eee;
+  font-family: 'Graphik', system-ui, -apple-system, Ubuntu, sans-serif;
 }
 </style>
