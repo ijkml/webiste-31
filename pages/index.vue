@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="root">
     <TheLogo />
     <div>Homepage</div>
   </div>
@@ -10,4 +10,7 @@
 
 
 <style lang="less" scoped>
+.root {
+  @apply h-200vh;
+}
 </style>
