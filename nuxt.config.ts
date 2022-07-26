@@ -1,9 +1,9 @@
 import { fileURLToPath } from 'url';
-import TypedRouter from 'nuxt-typed-router';
 import { defineNuxtConfig } from 'nuxt';
+import svgLoader from 'vite-svg-loader';
 
 export default defineNuxtConfig({
-  modules: ['@vueuse/nuxt', TypedRouter],
+  modules: ['@vueuse/nuxt'],
   buildModules: ['nuxt-windicss'],
   experimental: {
     reactivityTransform: true,
@@ -24,5 +24,10 @@ export default defineNuxtConfig({
         },
       },
     },
+    plugins: [
+      svgLoader({
+        defaultImport: 'url',
+      }),
+    ],
   },
 });
