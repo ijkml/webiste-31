@@ -1,5 +1,10 @@
-<script setup>
+<script setup lang="ts">
 // import { ref } from 'vue';
+interface LogoProps {
+  header?: boolean;
+}
+
+defineProps<LogoProps>();
 </script>
 
 <template>
@@ -7,6 +12,7 @@
     width="120"
     height="120"
     viewBox="0 0 32 32"
+    :class="[header && 'for-header']"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
@@ -21,6 +27,21 @@ svg {
     // fill: #1a1a1a;
     fill: #cecece;
     stroke-width: 3.6182;
+  }
+
+  &.for-header {
+    @apply max-h-8 my-1 sm:(max-h-10 my-0) w-auto select-none;
+
+    path {
+      @apply fill-zinc-300 transition-opacity opacity-70;
+    }
+
+    &:hover,
+    &:focus-visible {
+      :deep(path) {
+        @apply opacity-95;
+      }
+    }
   }
 }
 </style>
