@@ -21,6 +21,7 @@ useHead({
     <NuxtLoadingIndicator />
     <NuxtPage />
   </main>
+  <TheFooter />
 </template>
 
 <style lang="less">
@@ -31,7 +32,7 @@ body,
 
   height: 100vh;
   color-scheme: dark;
-  color: hsl(0, 0%, 75%);
+  color: hsl(0, 0%, 78%);
   font-family: 'Exo', ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -71,6 +72,9 @@ html {
 }
 
 #layout-main {
-  @apply py-20 px-10 text-center;
+  padding: 5vh 10vw;
+
+  // @apply ;
+  background: url('@img/bg-001.svg') bottom / cover no-repeat fixed;
 }
 </style>
