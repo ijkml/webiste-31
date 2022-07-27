@@ -27,12 +27,15 @@ useHead({
 html,
 body,
 #__nuxt {
+  @apply outline-none m-0 p-0;
+
   height: 100vh;
   color-scheme: dark;
   color: hsl(0, 0%, 75%);
-  font-family: 'Merriweather Sans', system-ui, -apple-system, Ubuntu, sans-serif;
-
-  @apply outline-none m-0 p-0;
+  font-family: 'Exo', ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
 }
 
 html {
