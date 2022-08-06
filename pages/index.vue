@@ -6,6 +6,9 @@
     <h1>Hello there,</h1>
     <p>I'm Moses Laurence, and I'm a developer.</p>
     <p>
+      I design and develop websites with bold typography, subtle gradients and
+      modern technology. I am a stickler for details, dedicated to
+      <br />
       I am a self-taught front-end developer focused on crafting modern and
       accessible web applications.
     </p>

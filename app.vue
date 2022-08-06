@@ -29,8 +29,6 @@ html,
 body,
 #__nuxt {
   @apply outline-none m-0 p-0;
-
-  height: 100vh;
   color-scheme: dark;
   color: hsl(0, 0%, 78%);
   font-family: 'Exo', ui-sans-serif, system-ui, -apple-system,
@@ -49,10 +47,10 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  max-width: 6px;
 
   &:horizontal {
-    height: 6px;
+    max-height: 6px;
   }
 
   &-track,
@@ -73,8 +71,9 @@ html {
 
 #layout-main {
   padding: 5vh 10vw;
+}
 
-  // @apply ;
+#__nuxt {
   background: url('@img/bg-001.svg') bottom / cover no-repeat fixed;
 }
 </style>
