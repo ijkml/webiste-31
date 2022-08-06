@@ -31,6 +31,6 @@ export default defineNuxtConfig({
   umami: {
     scriptUrl: 'https://ijkml-umami.up.railway.app/umami.js',
     websiteId: '73857c4b-3b4c-4edb-9274-d43e3e4757f7',
-    domains: 'netlify.app',
+    domains: 'ijkml.netlify.app',
   },
 });
