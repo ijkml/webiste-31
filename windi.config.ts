@@ -20,7 +20,7 @@ export default defineConfig({
       },
       colors: {
         pri: '#73fac8',
-        sec: '#00bee1',
+        sec: '#fa7575',
         tet: '#224248',
         blk: {
           1: '#1c1f21',
